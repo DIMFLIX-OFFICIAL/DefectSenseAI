@@ -153,7 +153,7 @@ color: #FFFFFF</string>
         </widget>
        </item>
        <item row="2" column="0">
-        <widget class="QLabel" name="labelVersion">
+        <widget class="QLabel" name="labelAllocated">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -193,7 +193,7 @@ color: #FFFFFF</string>
         </widget>
        </item>
        <item row="3" column="0">
-        <widget class="QLabel" name="labelLoading">
+        <widget class="QLabel" name="labelUnallocated">
          <property name="font">
           <font>
            <family>Segoe UI</family>

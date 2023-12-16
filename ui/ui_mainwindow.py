@@ -15,9 +15,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QFrame, QGridLayout,
-    QHBoxLayout, QLabel, QMainWindow, QPushButton,
-    QSizePolicy, QSpacerItem, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFrame,
+    QGridLayout, QHBoxLayout, QLabel, QListWidget,
+    QListWidgetItem, QMainWindow, QPushButton, QSizePolicy,
+    QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
 import ui.mainwindow_rc as resources_rc
 
 class Ui_MainWindow(object):
@@ -43,14 +44,16 @@ class Ui_MainWindow(object):
         self.backgground.setFrameShadow(QFrame.Raised)
         self.gridLayout = QGridLayout(self.backgground)
         self.gridLayout.setObjectName(u"gridLayout")
-        self.main_area = QFrame(self.backgground)
-        self.main_area.setObjectName(u"main_area")
-        self.main_area.setFrameShape(QFrame.StyledPanel)
-        self.main_area.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_2 = QVBoxLayout(self.main_area)
+        self.stackedWidget = QStackedWidget(self.backgground)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setStyleSheet(u"background-color: #3C3656;")
+        self.settings_page = QWidget()
+        self.settings_page.setObjectName(u"settings_page")
+        self.verticalLayout_2 = QVBoxLayout(self.settings_page)
+        self.verticalLayout_2.setSpacing(0)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout_2.setContentsMargins(10, 0, 10, 0)
-        self.drag_and_drop = QFrame(self.main_area)
+        self.verticalLayout_2.setContentsMargins(10, 10, 10, 0)
+        self.drag_and_drop = QFrame(self.settings_page)
         self.drag_and_drop.setObjectName(u"drag_and_drop")
         self.drag_and_drop.setMaximumSize(QSize(16777215, 350))
         self.drag_and_drop.setStyleSheet(u"border: 5px solid #9382FF;\n"
@@ -59,8 +62,9 @@ class Ui_MainWindow(object):
         self.drag_and_drop.setFrameShape(QFrame.StyledPanel)
         self.drag_and_drop.setFrameShadow(QFrame.Raised)
         self.verticalLayout_3 = QVBoxLayout(self.drag_and_drop)
-        self.verticalLayout_3.setSpacing(20)
+        self.verticalLayout_3.setSpacing(10)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.MinimumExpanding)
 
         self.verticalLayout_3.addItem(self.verticalSpacer_2)
@@ -76,7 +80,7 @@ class Ui_MainWindow(object):
 "	color: #FFFFFF;\n"
 "}")
 
-        self.verticalLayout_3.addWidget(self.drag_and_drop_title, 0, Qt.AlignHCenter|Qt.AlignVCenter)
+        self.verticalLayout_3.addWidget(self.drag_and_drop_title, 0, Qt.AlignHCenter)
 
         self.el_in_drag_and_drop = QFrame(self.drag_and_drop)
         self.el_in_drag_and_drop.setObjectName(u"el_in_drag_and_drop")
@@ -114,7 +118,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.del_element_in_drag_end_drop)
 
 
-        self.verticalLayout_3.addWidget(self.el_in_drag_and_drop, 0, Qt.AlignHCenter|Qt.AlignTop)
+        self.verticalLayout_3.addWidget(self.el_in_drag_and_drop, 0, Qt.AlignHCenter)
 
         self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.MinimumExpanding)
 
@@ -123,7 +127,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.drag_and_drop)
 
-        self.save_to_folder_checkbox = QCheckBox(self.main_area)
+        self.save_to_folder_checkbox = QCheckBox(self.settings_page)
         self.save_to_folder_checkbox.setObjectName(u"save_to_folder_checkbox")
         font2 = QFont()
         font2.setPointSize(11)
@@ -166,7 +170,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.save_to_folder_checkbox)
 
-        self.StartAIBtn = QPushButton(self.main_area)
+        self.StartAIBtn = QPushButton(self.settings_page)
         self.StartAIBtn.setObjectName(u"StartAIBtn")
         self.StartAIBtn.setMinimumSize(QSize(0, 50))
         self.StartAIBtn.setMaximumSize(QSize(16777215, 50))
@@ -183,8 +187,65 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.StartAIBtn)
 
+        self.stackedWidget.addWidget(self.settings_page)
+        self.results_page = QWidget()
+        self.results_page.setObjectName(u"results_page")
+        self.verticalLayout_4 = QVBoxLayout(self.results_page)
+        self.verticalLayout_4.setSpacing(10)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_4.setContentsMargins(10, 10, 10, 10)
+        self.DefectsFinded = QLabel(self.results_page)
+        self.DefectsFinded.setObjectName(u"DefectsFinded")
+        font4 = QFont()
+        font4.setPointSize(16)
+        font4.setBold(True)
+        self.DefectsFinded.setFont(font4)
+        self.DefectsFinded.setStyleSheet(u"color: #FFFFFF;")
+        self.DefectsFinded.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout.addWidget(self.main_area, 1, 0, 1, 1)
+        self.verticalLayout_4.addWidget(self.DefectsFinded)
+
+        self.defectList = QListWidget(self.results_page)
+        self.defectList.setObjectName(u"defectList")
+        self.defectList.setFont(font1)
+        self.defectList.setFocusPolicy(Qt.NoFocus)
+        self.defectList.setStyleSheet(u"QListWidget {\n"
+"        background-color: transparent;\n"
+"		padding: 15px 10px;	\n"
+"    }\n"
+"    QListWidget::item {\n"
+"		background-color: #564D7A;\n"
+"		padding: 10px;\n"
+"		border-radius: 5px;\n"
+"        color: white;\n"
+"        padding: 5px;\n"
+"		margin-bottom: 10px;\n"
+"    }")
+        self.defectList.setEditTriggers(QAbstractItemView.NoEditTriggers)
+        self.defectList.setProperty("showDropIndicator", False)
+        self.defectList.setSelectionMode(QAbstractItemView.NoSelection)
+        self.defectList.setSelectionBehavior(QAbstractItemView.SelectRows)
+        self.defectList.setTextElideMode(Qt.ElideNone)
+        self.defectList.setSelectionRectVisible(False)
+
+        self.verticalLayout_4.addWidget(self.defectList)
+
+        self.BackBtn = QPushButton(self.results_page)
+        self.BackBtn.setObjectName(u"BackBtn")
+        self.BackBtn.setMinimumSize(QSize(0, 50))
+        self.BackBtn.setFont(font3)
+        self.BackBtn.setStyleSheet(u"QPushButton {\n"
+"	background-color: #9382FF;\n"
+"	border: none;\n"
+"	border-radius: 15px;\n"
+"	color: #FFFFFF;\n"
+"}")
+
+        self.verticalLayout_4.addWidget(self.BackBtn)
+
+        self.stackedWidget.addWidget(self.results_page)
+
+        self.gridLayout.addWidget(self.stackedWidget, 1, 0, 1, 1)
 
         self.header = QFrame(self.backgground)
         self.header.setObjectName(u"header")
@@ -195,11 +256,11 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.Title = QLabel(self.header)
         self.Title.setObjectName(u"Title")
-        font4 = QFont()
-        font4.setFamilies([u"Segoe UI"])
-        font4.setPointSize(12)
-        font4.setBold(True)
-        self.Title.setFont(font4)
+        font5 = QFont()
+        font5.setFamilies([u"Segoe UI"])
+        font5.setPointSize(12)
+        font5.setBold(True)
+        self.Title.setFont(font5)
         self.Title.setStyleSheet(u"QLabel {\n"
 "	color: #FFFFFF;\n"
 "}")
@@ -211,7 +272,8 @@ class Ui_MainWindow(object):
         self.maximize_btn.setMinimumSize(QSize(20, 20))
         self.maximize_btn.setMaximumSize(QSize(20, 20))
         self.maximize_btn.setStyleSheet(u"background-color: rgb(0, 255, 0);\n"
-"border-radius: 10px;")
+"border-radius: 10px;\n"
+"border: none;")
 
         self.horizontalLayout.addWidget(self.maximize_btn)
 
@@ -220,7 +282,8 @@ class Ui_MainWindow(object):
         self.minimize_btn.setMinimumSize(QSize(20, 20))
         self.minimize_btn.setMaximumSize(QSize(20, 20))
         self.minimize_btn.setStyleSheet(u"background-color: rgb(255, 255, 0);\n"
-"	border-radius: 10px;")
+"	border-radius: 10px;\n"
+"border: none;")
 
         self.horizontalLayout.addWidget(self.minimize_btn)
 
@@ -229,7 +292,8 @@ class Ui_MainWindow(object):
         self.close_btn.setMinimumSize(QSize(20, 20))
         self.close_btn.setMaximumSize(QSize(20, 20))
         self.close_btn.setStyleSheet(u"background-color: rgb(255, 0, 0);\n"
-"	border-radius: 10px;")
+"	border-radius: 10px;\n"
+"border: none;")
 
         self.horizontalLayout.addWidget(self.close_btn)
 
@@ -243,6 +307,9 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
+        self.stackedWidget.setCurrentIndex(0)
+
+
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
@@ -253,6 +320,8 @@ class Ui_MainWindow(object):
         self.del_element_in_drag_end_drop.setText("")
         self.save_to_folder_checkbox.setText(QCoreApplication.translate("MainWindow", u"Save to folder \"Results\"", None))
         self.StartAIBtn.setText(QCoreApplication.translate("MainWindow", u"Start Processing", None))
+        self.DefectsFinded.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0434\u0435\u0444\u0435\u043a\u0442\u043e\u0432: ", None))
+        self.BackBtn.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u041d\u0430\u0437\u0430\u0434", None))
         self.Title.setText(QCoreApplication.translate("MainWindow", u"<html>\n"
 "<body>\n"
 "<p>\n"

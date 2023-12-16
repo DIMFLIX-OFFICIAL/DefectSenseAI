@@ -87,34 +87,34 @@ class Ui_SplashScreen(object):
 
         self.gridLayout.addWidget(self.labelPercentage, 1, 0, 1, 1)
 
-        self.labelVersion = QLabel(self.layoutWidget)
-        self.labelVersion.setObjectName(u"labelVersion")
-        self.labelVersion.setMinimumSize(QSize(0, 20))
-        self.labelVersion.setMaximumSize(QSize(16777215, 20))
+        self.labelAllocated = QLabel(self.layoutWidget)
+        self.labelAllocated.setObjectName(u"labelAllocated")
+        self.labelAllocated.setMinimumSize(QSize(0, 20))
+        self.labelAllocated.setMaximumSize(QSize(16777215, 20))
         font2 = QFont()
         font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(9)
-        self.labelVersion.setFont(font2)
-        self.labelVersion.setStyleSheet(u"QLabel{\n"
+        self.labelAllocated.setFont(font2)
+        self.labelAllocated.setStyleSheet(u"QLabel{\n"
 "	border-radius: 10px;	\n"
 "	background-color: #4C446D;\n"
 "	color: #FFFFFF;\n"
 "	margin-left: 40px;\n"
 "	margin-right: 40px;\n"
 "}")
-        self.labelVersion.setFrameShape(QFrame.NoFrame)
-        self.labelVersion.setAlignment(Qt.AlignCenter)
+        self.labelAllocated.setFrameShape(QFrame.NoFrame)
+        self.labelAllocated.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout.addWidget(self.labelVersion, 2, 0, 1, 1)
+        self.gridLayout.addWidget(self.labelAllocated, 2, 0, 1, 1)
 
-        self.labelLoading = QLabel(self.layoutWidget)
-        self.labelLoading.setObjectName(u"labelLoading")
-        self.labelLoading.setFont(font2)
-        self.labelLoading.setStyleSheet(u"background-color: none;\n"
+        self.labelUnallocated = QLabel(self.layoutWidget)
+        self.labelUnallocated.setObjectName(u"labelUnallocated")
+        self.labelUnallocated.setFont(font2)
+        self.labelUnallocated.setStyleSheet(u"background-color: none;\n"
 "color: #9382FF;")
-        self.labelLoading.setAlignment(Qt.AlignCenter)
+        self.labelUnallocated.setAlignment(Qt.AlignCenter)
 
-        self.gridLayout.addWidget(self.labelLoading, 3, 0, 1, 1)
+        self.gridLayout.addWidget(self.labelUnallocated, 3, 0, 1, 1)
 
         self.circularBg.raise_()
         self.circularProgress.raise_()
@@ -138,7 +138,7 @@ class Ui_SplashScreen(object):
 "    </body>\n"
 "</html>", None))
         self.labelPercentage.setText(QCoreApplication.translate("SplashScreen", u"<p><span style=\" font-size:68pt;\">0</span><span style=\" font-size:58pt; vertical-align:super;\">%</span></p>", None))
-        self.labelVersion.setText(QCoreApplication.translate("SplashScreen", u"v1.0.0", None))
-        self.labelLoading.setText(QCoreApplication.translate("SplashScreen", u"Loading...", None))
+        self.labelAllocated.setText(QCoreApplication.translate("SplashScreen", u"v1.0.0", None))
+        self.labelUnallocated.setText(QCoreApplication.translate("SplashScreen", u"Loading...", None))
     # retranslateUi
 
