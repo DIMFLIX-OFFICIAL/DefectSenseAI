@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="check">
+    <file>resources/check.png</file>
+  </qresource>
+  <qresource prefix="close">
+    <file>resources/close.png</file>
+  </qresource>
+</RCC>
