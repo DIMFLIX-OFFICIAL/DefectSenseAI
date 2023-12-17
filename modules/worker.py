@@ -1,14 +1,13 @@
 import glob
-import os, match
+import os
 import time
 from datetime import datetime
 
 import cv2
 from PySide6.QtCore import Signal, QThread, QDir
 from ultralytics import YOLO
-from PIL import Image
 
-from classification_cfg import cl
+from config import allow_extensions
 
 
 class Worker(QThread):
@@ -24,8 +23,7 @@ class Worker(QThread):
 
     @staticmethod
     def is_image_file(filename):
-        extensions = [".png", ".jpg", ".bmp"]
-        return any(extension in filename for extension in extensions)
+        return any(extension in filename for extension in allow_extensions)
 
     def find_paths(self, path):
         result = []
@@ -34,9 +32,9 @@ class Worker(QThread):
             if self.is_image_file(path):
                 result.append(path)
         elif os.path.isdir(path):
-            result = glob.glob(os.path.join(path, '**/*.png'), recursive=True) + \
-                     glob.glob(os.path.join(path, '**/*.jpg'), recursive=True) + \
-                     glob.glob(os.path.join(path, '**/*.bmp'), recursive=True)
+            result = []
+            for ext in allow_extensions:
+                result += glob.glob(os.path.join(path, f'**/*{ext}'), recursive=True)
 
         return result
 
@@ -55,7 +53,7 @@ class Worker(QThread):
                 time.sleep(0.0015)
                 self.update_progress.emit(i)
 
-            model = YOLO('./weights/best.pt')  # build from YAML and transfer weights
+            model = YOLO('./weights/best.pt')
             results = model(paths)
             response = []
 

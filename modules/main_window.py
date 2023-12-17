@@ -10,6 +10,7 @@ from PySide6.QtWidgets import *
 from modules.splash_screen import SplashScreen
 from modules.worker import Worker
 from ui.ui_mainwindow import Ui_MainWindow
+from config import allow_extensions
 
 
 class MainWindow(QMainWindow):
@@ -124,7 +125,7 @@ class MainWindow(QMainWindow):
         url = event.mimeData().urls()[-1].toLocalFile()
 
         if os.path.isfile(url):
-            if os.path.splitext(url)[1] not in [".png", ".jpg", ".jpeg", ".bmp"]:
+            if os.path.splitext(url)[1] not in allow_extensions:
                 QMessageBox.critical(None, "Error", "Invalid file extension")
                 return
 
