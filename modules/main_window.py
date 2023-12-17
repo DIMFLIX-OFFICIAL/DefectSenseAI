@@ -1,11 +1,10 @@
-import functools
 import os
 from typing import Union, List
 
 import cv2
 from PySide6 import QtCore
-from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QMouseEvent, QIcon, QFont
+from PySide6.QtCore import Qt
+from PySide6.QtGui import QMouseEvent
 from PySide6.QtWidgets import *
 
 from modules.splash_screen import SplashScreen

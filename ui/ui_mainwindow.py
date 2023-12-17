@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFram
     QGridLayout, QHBoxLayout, QLabel, QListWidget,
     QListWidgetItem, QMainWindow, QPushButton, QSizePolicy,
     QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
-import ui.mainwindow_rc as resources_rc
+import ui.resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -28,6 +28,9 @@ class Ui_MainWindow(object):
         MainWindow.resize(392, 596)
         MainWindow.setMinimumSize(QSize(0, 0))
         MainWindow.setMaximumSize(QSize(16777215, 16777215))
+        icon = QIcon()
+        icon.addFile(u":/logo/resources/logo.png", QSize(), QIcon.Normal, QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -111,9 +114,9 @@ class Ui_MainWindow(object):
         self.del_element_in_drag_end_drop.setMaximumSize(QSize(30, 30))
         self.del_element_in_drag_end_drop.setStyleSheet(u"border: none;\n"
 "background-color: transparent;")
-        icon = QIcon()
-        icon.addFile(u":/close/resources/close.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.del_element_in_drag_end_drop.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u":/close/resources/close.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.del_element_in_drag_end_drop.setIcon(icon1)
 
         self.horizontalLayout_2.addWidget(self.del_element_in_drag_end_drop)
 
@@ -164,9 +167,9 @@ class Ui_MainWindow(object):
 "QCheckBox::indicator:checked:hover {\n"
 "    border: 2px solid #9382FF;\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/check/C:/Users/dimap/Downloads/check.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.save_to_folder_checkbox.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/check/C:/Users/dimap/Downloads/check.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.save_to_folder_checkbox.setIcon(icon2)
 
         self.verticalLayout_2.addWidget(self.save_to_folder_checkbox)
 

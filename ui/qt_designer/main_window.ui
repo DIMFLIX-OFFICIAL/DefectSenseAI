@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>DEFFECT SENSE AI</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/logo/resources/logo.png</normaloff>:/logo/resources/logo.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">

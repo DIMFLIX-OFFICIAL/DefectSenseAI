@@ -2,6 +2,9 @@
   <qresource prefix="check">
     <file>resources/check.png</file>
   </qresource>
+  <qresource prefix="logo">
+    <file>resources/logo.png</file>
+  </qresource>
   <qresource prefix="close">
     <file>resources/close.png</file>
   </qresource>

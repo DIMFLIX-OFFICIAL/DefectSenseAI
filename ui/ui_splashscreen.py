@@ -17,12 +17,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QLabel,
     QMainWindow, QSizePolicy, QWidget)
+import ui.resources_rc
+
 
 class Ui_SplashScreen(object):
     def setupUi(self, SplashScreen):
         if not SplashScreen.objectName():
             SplashScreen.setObjectName(u"SplashScreen")
         SplashScreen.resize(340, 340)
+        icon = QIcon()
+        icon.addFile(u":/logo/resources/logo.png", QSize(), QIcon.Normal, QIcon.Off)
+        SplashScreen.setWindowIcon(icon)
+        SplashScreen.setIconSize(QSize(120, 120))
         self.centralwidget = QWidget(SplashScreen)
         self.centralwidget.setObjectName(u"centralwidget")
         self.circularProgressBarBase = QFrame(self.centralwidget)
