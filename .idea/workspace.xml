@@ -6,9 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="74497806-3a5e-4ab4-bc2b-fe57673deb2c" name="Changes" comment="init project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/main_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/worker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui_mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui_mainwindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_188.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_201.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_202.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_206.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_218.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_219.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_192.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_193.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_195.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_198.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_199.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_200.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_205.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_188.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_201.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_202.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_206.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_208.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_209.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_211.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_216.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_218.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_219.bmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +59,24 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "ignore_missing_gitignore": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2023.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\PyCharm 2023.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Другие компьютеры\Компьютер\D\Defect Detection\test_dataset" />
@@ -115,7 +136,8 @@
       <workItem from="1702758448517" duration="20926000" />
       <workItem from="1702779953918" duration="566000" />
       <workItem from="1702781238976" duration="243000" />
-      <workItem from="1702783812497" duration="2070000" />
+      <workItem from="1702783812497" duration="2890000" />
+      <workItem from="1702793942206" duration="720000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -165,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702784967845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init project">
+      <option name="closed" value="true" />
+      <created>1702787182937</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702787182937</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +206,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702785676578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702796734859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

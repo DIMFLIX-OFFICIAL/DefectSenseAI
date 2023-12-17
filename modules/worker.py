@@ -4,6 +4,7 @@ import time
 from datetime import datetime
 
 import cv2
+import numpy as np
 from PySide6.QtCore import Signal, QThread, QDir
 from ultralytics import YOLO
 
@@ -67,6 +68,11 @@ class Worker(QThread):
                     cords = [round(x) for x in cords]
 
                     img = cv2.imread(path)
+
+                    img = np.array(img)  # Переводим в numpy массивы
+                    img = img.astype('float32')  # Изменяем на тип float
+                    img = img / 255.0  # Нормализируем пиксили
+
                     cv2.rectangle(img, (cords[0], cords[1]), (cords[2], cords[3]), (0, 255, 255), 5)
 
                     if self.save_result:
