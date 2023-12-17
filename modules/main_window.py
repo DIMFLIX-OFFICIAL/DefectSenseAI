@@ -1,7 +1,8 @@
 import functools
 import os
-from typing import Union
+from typing import Union, List
 
+import cv2
 from PySide6 import QtCore
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QMouseEvent, QIcon, QFont
@@ -15,6 +16,7 @@ from ui.ui_mainwindow import Ui_MainWindow
 class MainWindow(QMainWindow):
     dragPos: int
     path_to_file: Union[str, None] = None
+    save_results: bool = False
 
     def __init__(self, *args, **kwargs):
         QMainWindow.__init__(self, *args, **kwargs)
@@ -43,36 +45,60 @@ class MainWindow(QMainWindow):
         self.ui.close_btn.clicked.connect(self.close)
         self.ui.minimize_btn.clicked.connect(self.showMinimized)
 
-        ##==> Старт обработки
+        ##==> Какие-то кнопошки
         ################################################
         self.ui.StartAIBtn.clicked.connect(self.start_ai_working)
         self.ui.BackBtn.clicked.connect(lambda: self.ui.stackedWidget.setCurrentIndex(0))
+        self.ui.save_to_folder_checkbox.stateChanged.connect(
+            lambda: setattr(self, "save_results", self.ui.save_to_folder_checkbox.isChecked())
+        )
 
     def start_ai_working(self):
-
-        def end_ai_working():
-            self.ui.stackedWidget.setCurrentIndex(1)
-            self.show()
+        if self.path_to_file is None or self.path_to_file == "":
+            QMessageBox.critical(None, "Error", "Select file!")
+            return
 
         self.splashscreen = SplashScreen(
-            lambda: end_ai_working(),
+            lambda: self.end_ai_working(None),
             automatic=False,
             allocated_label="AI Working",
             unallocated_label="Loading..."
         )
 
         self.close()  # Закрываем главное окно на время выполнения
-        self.custom_thread = Worker()  # Создание процесса
+        self.custom_thread = Worker(self.path_to_file, self.save_results)  # Создание процесса
         self.custom_thread.start()  # Выполнение процесса
-        self.custom_thread.middle_result.connect(lambda x: self.splashscreen.progress(x))  # Обновление ProgressBar
-        self.custom_thread.end_working.connect(lambda x: self.add_defect_elements(x))
+        self.custom_thread.update_progress.connect(lambda x: self.splashscreen.progress(x))  # Обновление ProgressBar
+        self.custom_thread.progress_increment.connect(lambda: self.splashscreen.progress(self.splashscreen.counter+1))
+        self.custom_thread.end_working.connect(lambda results: self.end_ai_working(results))  # Завершение работы АИ
 
-    def add_defect_elements(self, list_of_paths: list):
+    def end_ai_working(self, results: Union[None, list]):
+        if hasattr(self, "splashscreen"):
+            if self.splashscreen.isVisible():
+                self.splashscreen.close()
+
+        self.show()
+
+        if results is not None and len(results) > 0:
+            self.add_defect_elements(results)
+            self.ui.stackedWidget.setCurrentIndex(1)
+        else:
+            self.delete_file_in_drag_and_drop()
+
+    def add_defect_elements(self, results: List[dict]) -> None:
+        def open_img(item):
+            data = item.data(Qt.UserRole)
+            cv2.imshow(data["filename"], data["image"])
+            cv2.waitKey(0)
+
         self.ui.defectList.clear()
+        for res in results:
+            new_item = QListWidgetItem(f"Файл: {res['filename']}\nКлассификация: {res['type']}")
+            new_item.setData(Qt.UserRole, res)
 
-        for path in list_of_paths:
-            self.ui.defectList.addItem(path + "\nХуй повис")
+            self.ui.defectList.addItem(new_item)
 
+        self.ui.defectList.itemClicked.connect(open_img)
         self.ui.DefectsFinded.setText(f"Найдено дефектов: {self.ui.defectList.count()}")
 
     def delete_file_in_drag_and_drop(self):
@@ -95,11 +121,17 @@ class MainWindow(QMainWindow):
         event.accept() if event.mimeData().hasUrls() else event.ignore()
 
     def drag_and_drop_ev_drop(self, event):
-        for url in event.mimeData().urls():
-            self.change_focus_in_drag_and_drop(False)
-            self.path_to_file = url.toLocalFile()
-            self.ui.filename.setText(os.path.basename(url.toLocalFile()))
-            self.ui.el_in_drag_and_drop.show()
+        self.change_focus_in_drag_and_drop(False)
+        url = event.mimeData().urls()[-1].toLocalFile()
+
+        if os.path.isfile(url):
+            if os.path.splitext(url)[1] not in [".png", ".jpg", ".jpeg", ".bmp"]:
+                QMessageBox.critical(None, "Error", "Invalid file extension")
+                return
+
+        self.path_to_file = url
+        self.ui.filename.setText(os.path.basename(url))
+        self.ui.el_in_drag_and_drop.show()
 
     def move_window(self, event: QMouseEvent):
         if event.buttons() == Qt.LeftButton:
