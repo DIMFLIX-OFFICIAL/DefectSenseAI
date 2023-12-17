@@ -75,7 +75,12 @@ class Worker(QThread):
                         cv2.imwrite(f'./results/{foldername}/{filename}', img)
 
                     if class_id != "не дефект":
-                        response.append({"type": class_id, "image": img, "filename": filename})
+                        response.append({
+                            "type": class_id,
+                            "image": img,
+                            "filename": filename,
+                            "cors": f"X0: {cords[0]}, Y0: {cords[1]}; X1: {cords[2]}, Y1: {cords[3]}"
+                        })
 
                 for i in range(50//len(results)):
                     self.progress_increment.emit()

@@ -55,7 +55,7 @@ class MainWindow(QMainWindow):
 
     def start_ai_working(self):
         if self.path_to_file is None or self.path_to_file == "":
-            QMessageBox.critical(None, "Error", "Select file!")
+            QMessageBox.critical(None, "Ошибка", "Выберите файл!")
             return
 
         self.splashscreen = SplashScreen(
@@ -93,7 +93,7 @@ class MainWindow(QMainWindow):
 
         self.ui.defectList.clear()
         for res in results:
-            new_item = QListWidgetItem(f"Файл: {res['filename']}\nКлассификация: {res['type']}")
+            new_item = QListWidgetItem(f"Файл: {res['filename']}\nКлассификация: {res['type']}\n{res['cors']}")
             new_item.setData(Qt.UserRole, res)
 
             self.ui.defectList.addItem(new_item)
@@ -126,7 +126,7 @@ class MainWindow(QMainWindow):
 
         if os.path.isfile(url):
             if os.path.splitext(url)[1] not in allow_extensions:
-                QMessageBox.critical(None, "Error", "Invalid file extension")
+                QMessageBox.critical(None, "Error", "Неверное расширение файла")
                 return
 
         self.path_to_file = url

@@ -21,6 +21,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFram
     QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
 import ui.resources_rc
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -318,11 +319,11 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"DEFFECT SENSE AI", None))
-        self.drag_and_drop_title.setText(QCoreApplication.translate("MainWindow", u"Drop your file here!", None))
+        self.drag_and_drop_title.setText(QCoreApplication.translate("MainWindow", u"Перемести файлы сюда!", None))
         self.filename.setText(QCoreApplication.translate("MainWindow", u"File.txt", None))
         self.del_element_in_drag_end_drop.setText("")
-        self.save_to_folder_checkbox.setText(QCoreApplication.translate("MainWindow", u"Save to folder \"Results\"", None))
-        self.StartAIBtn.setText(QCoreApplication.translate("MainWindow", u"Start Processing", None))
+        self.save_to_folder_checkbox.setText(QCoreApplication.translate("MainWindow", u"Сохранить в папке \"Results\"", None))
+        self.StartAIBtn.setText(QCoreApplication.translate("MainWindow", u"Начать обработку", None))
         self.DefectsFinded.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0434\u0435\u0444\u0435\u043a\u0442\u043e\u0432: ", None))
         self.BackBtn.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u041d\u0430\u0437\u0430\u0434", None))
         self.Title.setText(QCoreApplication.translate("MainWindow", u"<html>\n"

@@ -5,269 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74497806-3a5e-4ab4-bc2b-fe57673deb2c" name="Changes" comment="init project">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classification_cfg.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/main_window.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/worker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-05/0_188.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-05/0_201.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-05/0_202.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-06/0_206.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-06/0_218.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 05-31-06/0_219.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_223.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_224.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_225.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_226.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_227.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_229.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_230.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_232.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_233.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_234.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_238.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_240.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_245.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_247.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_248.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_249.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_251.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_253.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_254.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_255.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_256.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_257.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_258.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_260.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_261.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_263.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_271.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_272.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_273.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_275.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_276.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_277.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_278.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_279.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_283.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_285.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_287.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_288.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_289.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_290.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_291.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_292.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_293.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_294.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_295.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_296.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_297.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_308.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_309.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_310.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_311.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_320.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_322.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_323.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_324.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_325.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_328.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_329.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_333.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_335.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_337.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_339.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_347.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_350.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_352.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_353.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_356.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_357.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_358.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_359.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_360.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_362.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_363.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_364.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_367.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_372.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_375.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_376.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_377.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_378.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_379.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_382.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_383.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_384.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_385.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_386.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_387.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_388.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_392.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_393.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_394.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_396.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_397.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_398.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_399.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_400.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_403.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_404.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_410.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_412.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_416.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_417.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_419.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_420.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_421.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_421_1.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_422.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_423.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_424.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_425.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_426.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_426_1.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_426_2.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_427.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_428.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_432.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_437.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_443.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_444.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_446.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_447.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_448.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_451.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_453.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_455.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_458.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_459.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_460.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_461.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_462.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_463.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_466.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_467.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_470.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_473.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_475.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_476.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_481.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_482.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_483.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_486.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_487.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_489.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_493.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_494.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_496.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_497.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_498.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_499.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_500.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_501.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_502.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_503.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_504.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_505.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_506.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_509.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_511.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_513.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_515.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_516.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_518.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_520.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_521.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_522.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_523.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_524.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_526.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_527.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_528.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_529.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_530.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_533.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_534.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_536.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_537.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_538.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_539.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_542.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_543.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_545.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_547.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_550.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_551.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_552.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_553.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_558.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_560.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_564.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_565.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_566.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_569.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_572.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_578.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_581.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_586.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_589.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_593.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_595.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_598.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_599.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_603.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_605.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_609.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_610.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_614.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_616.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_617.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_620.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_621.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_622.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_623.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_625.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_628.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_630.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_632.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_633.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_636.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_637.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_639.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_641.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_643.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_647.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_648.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_649.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_650.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_651.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_653.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_654.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_656.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_657.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_659.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_661.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_662.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_663.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_664.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_668.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_670.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_671.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_672.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_677.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_680.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_681.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_684.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_685.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_686.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_687.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_691.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_692.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_dataset/0_694.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/yaml_format.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui_mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui_mainwindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +115,7 @@
       <workItem from="1702758448517" duration="20926000" />
       <workItem from="1702779953918" duration="566000" />
       <workItem from="1702781238976" duration="243000" />
-      <workItem from="1702783812497" duration="1109000" />
+      <workItem from="1702783812497" duration="2070000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -416,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702781309199</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init project">
+      <option name="closed" value="true" />
+      <created>1702784967845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702784967845</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +176,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702784746796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702785676578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
