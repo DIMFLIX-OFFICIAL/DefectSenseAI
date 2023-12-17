@@ -6,30 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="74497806-3a5e-4ab4-bc2b-fe57673deb2c" name="Changes" comment="init project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/worker.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/worker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_188.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_201.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-27/0_202.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_206.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_218.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 06-43-28/0_219.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_192.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_193.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_195.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_198.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_199.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_200.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-04/0_205.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_188.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_201.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_202.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_206.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_208.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_209.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_211.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_216.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_218.bmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/2023-12-17 07-09-05/0_219.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/qt_designer/main_window.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ui/qt_designer/main_window.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/ui_mainwindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui_mainwindow.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +116,7 @@
       <workItem from="1702779953918" duration="566000" />
       <workItem from="1702781238976" duration="243000" />
       <workItem from="1702783812497" duration="2890000" />
-      <workItem from="1702793942206" duration="720000" />
+      <workItem from="1702793942206" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -195,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702787182937</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init project">
+      <option name="closed" value="true" />
+      <created>1702796943890</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702796943890</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +193,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702796734859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Defect_Detection$app.coverage" NAME="app Coverage Results" MODIFIED="1702798104304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

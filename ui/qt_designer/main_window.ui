@@ -29,6 +29,96 @@
    <iconset resource="resources.qrc">
     <normaloff>:/logo/resources/logo.png</normaloff>:/logo/resources/logo.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* VERTICAL SCROLLBAR */
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(45, 45, 68);
+    width: 14px;
+    margin: 15px 0 15px 0;
+	border-radius: 0px;
+ }
+
+/*  HANDLE BAR VERTICAL */
+QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+}
+QScrollBar::handle:vertical:hover{	
+	background-color: #9382FF;
+}
+QScrollBar::handle:vertical:pressed {	
+	background-color: #9382FF;
+}
+
+/* BTN TOP - SCROLLBAR */
+QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical:hover {	
+	background-color: #9382FF;
+}
+QScrollBar::sub-line:vertical:pressed {	
+	background-color: #9382FF;
+}
+
+/* BTN BOTTOM - SCROLLBAR */
+QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+QScrollBar::add-line:vertical:hover {	
+	background-color: #9382FF;
+}
+QScrollBar::add-line:vertical:pressed {	
+	background-color: #9382FF;
+}
+
+/* RESET ARROW */
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+}
+
+
+
+/* HORIZONTAL SCROLLBAR - HOMEWORK */
+QScrollBar:horizontal {
+   
+}
+QScrollBar::handle:horizontal {
+    
+}
+QScrollBar::add-line:horizontal {
+    
+}
+QScrollBar::sub-line:horizontal {
+    
+}
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+
+}
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <property name="spacing">
@@ -406,7 +496,12 @@ QCheckBox::indicator:checked:hover {
         color: white;
         padding: 5px;
 		margin-bottom: 10px;
-    }</string>
+		margin-right: 10px;
+    }
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(56, 56, 85);
+ }</string>
              </property>
              <property name="editTriggers">
               <set>QAbstractItemView::NoEditTriggers</set>
@@ -426,6 +521,121 @@ QCheckBox::indicator:checked:hover {
              <property name="selectionRectVisible">
               <bool>false</bool>
              </property>
+             <item>
+              <property name="text">
+               <string>ыфв</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>фывыфвфыв</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Новый элемент</string>
+              </property>
+             </item>
             </widget>
            </item>
            <item>

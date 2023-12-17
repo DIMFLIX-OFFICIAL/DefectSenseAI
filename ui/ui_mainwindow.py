@@ -21,7 +21,6 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFram
     QSpacerItem, QStackedWidget, QVBoxLayout, QWidget)
 import ui.resources_rc
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
@@ -32,6 +31,96 @@ class Ui_MainWindow(object):
         icon = QIcon()
         icon.addFile(u":/logo/resources/logo.png", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
+        MainWindow.setStyleSheet(u"/* VERTICAL SCROLLBAR */\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(45, 45, 68);\n"
+"    width: 14px;\n"
+"    margin: 15px 0 15px 0;\n"
+"	border-radius: 0px;\n"
+" }\n"
+"\n"
+"/*  HANDLE BAR VERTICAL */\n"
+"QScrollBar::handle:vertical {	\n"
+"	background-color: rgb(80, 80, 122);\n"
+"	min-height: 30px;\n"
+"	border-radius: 7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover{	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"QScrollBar::handle:vertical:pressed {	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"\n"
+"/* BTN TOP - SCROLLBAR */\n"
+"QScrollBar::sub-line:vertical {\n"
+"	border: none;\n"
+"	background-color: rgb(59, 59, 90);\n"
+"	height: 15px;\n"
+"	border-top-left-radius: 7px;\n"
+"	border-top-right-radius: 7px;\n"
+"	subcontrol-position: top;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:hover {	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"QScrollBar::sub-line:vertical:pressed {	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"\n"
+"/* BTN BOTTOM - SCROLLBAR */\n"
+"QScrollBar::add"
+                        "-line:vertical {\n"
+"	border: none;\n"
+"	background-color: rgb(59, 59, 90);\n"
+"	height: 15px;\n"
+"	border-bottom-left-radius: 7px;\n"
+"	border-bottom-right-radius: 7px;\n"
+"	subcontrol-position: bottom;\n"
+"	subcontrol-origin: margin;\n"
+"}\n"
+"QScrollBar::add-line:vertical:hover {	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"QScrollBar::add-line:vertical:pressed {	\n"
+"	background-color: #9382FF;\n"
+"}\n"
+"\n"
+"/* RESET ARROW */\n"
+"QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {\n"
+"	background: none;\n"
+"}\n"
+"QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {\n"
+"	background: none;\n"
+"}\n"
+"\n"
+"\n"
+"\n"
+"/* HORIZONTAL SCROLLBAR - HOMEWORK */\n"
+"QScrollBar:horizontal {\n"
+"   \n"
+"}\n"
+"QScrollBar::handle:horizontal {\n"
+"    \n"
+"}\n"
+"QScrollBar::add-line:horizontal {\n"
+"    \n"
+"}\n"
+"QScrollBar::sub-line:horizontal {\n"
+"    \n"
+"}\n"
+"QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal\n"
+"{\n"
+"\n"
+"}\n"
+"QScrollBar::add-page:horizontal, QScrollBar::sub-p"
+                        "age:horizontal\n"
+"{\n"
+"\n"
+"}\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.verticalLayout = QVBoxLayout(self.centralwidget)
@@ -210,6 +299,29 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.DefectsFinded)
 
         self.defectList = QListWidget(self.results_page)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
+        QListWidgetItem(self.defectList)
         self.defectList.setObjectName(u"defectList")
         self.defectList.setFont(font1)
         self.defectList.setFocusPolicy(Qt.NoFocus)
@@ -224,7 +336,12 @@ class Ui_MainWindow(object):
 "        color: white;\n"
 "        padding: 5px;\n"
 "		margin-bottom: 10px;\n"
-"    }")
+"		margin-right: 10px;\n"
+"    }\n"
+" QScrollBar:vertical {\n"
+"	border: none;\n"
+"    background: rgb(56, 56, 85);\n"
+" }")
         self.defectList.setEditTriggers(QAbstractItemView.NoEditTriggers)
         self.defectList.setProperty("showDropIndicator", False)
         self.defectList.setSelectionMode(QAbstractItemView.NoSelection)
@@ -313,18 +430,68 @@ class Ui_MainWindow(object):
 
         self.stackedWidget.setCurrentIndex(0)
 
-
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"DEFFECT SENSE AI", None))
-        self.drag_and_drop_title.setText(QCoreApplication.translate("MainWindow", u"Перемести файлы сюда!", None))
+        self.drag_and_drop_title.setText(QCoreApplication.translate("MainWindow", u"Drop your file here!", None))
         self.filename.setText(QCoreApplication.translate("MainWindow", u"File.txt", None))
         self.del_element_in_drag_end_drop.setText("")
-        self.save_to_folder_checkbox.setText(QCoreApplication.translate("MainWindow", u"Сохранить в папке \"Results\"", None))
-        self.StartAIBtn.setText(QCoreApplication.translate("MainWindow", u"Начать обработку", None))
+        self.save_to_folder_checkbox.setText(QCoreApplication.translate("MainWindow", u"Save to folder \"Results\"", None))
+        self.StartAIBtn.setText(QCoreApplication.translate("MainWindow", u"Start Processing", None))
         self.DefectsFinded.setText(QCoreApplication.translate("MainWindow", u"\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0434\u0435\u0444\u0435\u043a\u0442\u043e\u0432: ", None))
+
+        __sortingEnabled = self.defectList.isSortingEnabled()
+        self.defectList.setSortingEnabled(False)
+        ___qlistwidgetitem = self.defectList.item(0)
+        ___qlistwidgetitem.setText(QCoreApplication.translate("MainWindow", u"\u044b\u0444\u0432", None));
+        ___qlistwidgetitem1 = self.defectList.item(1)
+        ___qlistwidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem2 = self.defectList.item(2)
+        ___qlistwidgetitem2.setText(QCoreApplication.translate("MainWindow", u"\u0444\u044b\u0432\u044b\u0444\u0432\u0444\u044b\u0432", None));
+        ___qlistwidgetitem3 = self.defectList.item(3)
+        ___qlistwidgetitem3.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem4 = self.defectList.item(4)
+        ___qlistwidgetitem4.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem5 = self.defectList.item(5)
+        ___qlistwidgetitem5.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem6 = self.defectList.item(6)
+        ___qlistwidgetitem6.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem7 = self.defectList.item(7)
+        ___qlistwidgetitem7.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem8 = self.defectList.item(8)
+        ___qlistwidgetitem8.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem9 = self.defectList.item(9)
+        ___qlistwidgetitem9.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem10 = self.defectList.item(10)
+        ___qlistwidgetitem10.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem11 = self.defectList.item(11)
+        ___qlistwidgetitem11.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem12 = self.defectList.item(12)
+        ___qlistwidgetitem12.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem13 = self.defectList.item(13)
+        ___qlistwidgetitem13.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem14 = self.defectList.item(14)
+        ___qlistwidgetitem14.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem15 = self.defectList.item(15)
+        ___qlistwidgetitem15.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem16 = self.defectList.item(16)
+        ___qlistwidgetitem16.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem17 = self.defectList.item(17)
+        ___qlistwidgetitem17.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem18 = self.defectList.item(18)
+        ___qlistwidgetitem18.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem19 = self.defectList.item(19)
+        ___qlistwidgetitem19.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem20 = self.defectList.item(20)
+        ___qlistwidgetitem20.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem21 = self.defectList.item(21)
+        ___qlistwidgetitem21.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        ___qlistwidgetitem22 = self.defectList.item(22)
+        ___qlistwidgetitem22.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u0432\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442", None));
+        self.defectList.setSortingEnabled(__sortingEnabled)
+
         self.BackBtn.setText(QCoreApplication.translate("MainWindow", u"\u0412\u0435\u0440\u043d\u0443\u0442\u044c\u0441\u044f \u041d\u0430\u0437\u0430\u0434", None))
         self.Title.setText(QCoreApplication.translate("MainWindow", u"<html>\n"
 "<body>\n"
