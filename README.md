@@ -16,3 +16,6 @@ DEFECT SENSE AI - ваш надежный проводник в мире обн�
 - Download this repository
 - run command `pip3 install -r requirements.txt `
 - run `app.py`
+
+## Результат
+<img src='https://github.com/K1rsN7/K1rsN7/blob/main/Image/diploma_12.png' width=50%>
