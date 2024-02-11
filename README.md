@@ -16,3 +16,6 @@ DEFECT SENSE AI - ваш надежный проводник в мире обн�
 - Download this repository
 - run command `pip3 install -r requirements.txt `
 - run `app.py`
+
+## Итоги хакатона
+<img src="https://github.com/DIMFLIX-HACKATONS/DefectSenseAI/blob/d2bc727e5c71e28751cc90a1abe2470d87a10a6c/%D0%90%D1%82%D0%BE%D0%BC%D0%B8%D0%BA%20%D0%A5%D0%B0%D0%BA.png" alt=""/>
