@@ -4,13 +4,13 @@
 <br>
 <div align="center">
   <a href="https://github.com/K1rsN7/Defect-Detection/issues">
-		<img src="https://img.shields.io/github/issues/K1rsN7/Defect-Detection?color=4A73DF&labelColor=1C2325&style=for-the-badge">
+		<img src="https://img.shields.io/github/issues/K1rsN7/Defect-Detection?color=E83D6A&labelColor=1C2325&style=for-the-badge">
 	</a>
 	<a href="https://github.com/K1rsN7/Defect-Detection/stargazers">
-		<img src="https://img.shields.io/github/stars/K1rsN7/Defect-Detection?color=4A73DF&labelColor=1C2325&style=for-the-badge">
+		<img src="https://img.shields.io/github/stars/K1rsN7/Defect-Detection?color=E83D6A&labelColor=1C2325&style=for-the-badge">
 	</a>
 	<a href="./LICENSE">
-		<img src="https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-4A73DF?style=for-the-badge&labelColor=1C2325" alt="Лицензия CC BY-NC 4.0">
+		<img src="https://img.shields.io/badge/Licence-CC%20BY--NC%204.0-E83D6A?style=for-the-badge&labelColor=1C2325" alt="Лицензия CC BY-NC 4.0">
 	</a>
 </div>
 
@@ -49,4 +49,14 @@
 <h2 align="center">Результат</h2>
 <div align="center">
     <img src='https://github.com/K1rsN7/K1rsN7/blob/main/Image/diploma_12.png' width="50%" alt="Результат">
+</div>
+<h2 align="center"> Star History</h2>
+<div align="center">
+<a href="https://star-history.com/#K1rsN7/Defect-Detection&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=K1rsN7/Defect-Detection&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=K1rsN7/Defect-Detection&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=K1rsN7/SubManage&type=Date" />
+ </picture>
+</a>
 </div>
